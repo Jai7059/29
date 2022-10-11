@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center ;">
+    <button type="button" onclick="one()">
+        print 5 values taken from user
+    </button>
+    <br>
+    <button type="button" onclick="two()">
+    Total Marks </button>
+    <script>
+        function one(){
+let count=0
+while (count<5){
+    let num=prompt("Enter a value");
+    document.write(num+"<br>")
+    count++
+}
+}
+
+function two(){
+    var total=0
+var count=0
+while(count<5){
+    var marks=prompt("Enter marks")
+    total+= parseInt(marks)
+    count++
+}
+document.write("Total marks are: "+total)
+}
+    </script>
+</body>
+</html>
